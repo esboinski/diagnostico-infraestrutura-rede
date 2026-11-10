@@ -46,3 +46,35 @@ A partir do Intelbras AF 1200, foi integrado um TP-Link EX3000 por meio de uma c
 | Notebook | Dispositivo utilizado para configuração e testes |
 
 O diagrama representa as conexões físicas e sem fio identificadas durante a atividade. Os detalhes de configuração e funcionamento lógico da rede são abordados nas próximas seções.
+
+## Implementação
+
+A implementação consistiu na integração de um TP-Link EX3000 à infraestrutura existente, com o objetivo de disponibilizar conectividade Wi-Fi em uma sala que anteriormente não possuía acesso à rede.
+
+### Configuração do Access Point
+
+O TP-Link EX3000 foi configurado em modo **Access Point (AP)**, permitindo que o equipamento disponibilizasse conectividade sem fio utilizando a infraestrutura de rede existente.
+
+O servidor DHCP do EX3000 foi desativado, mantendo a distribuição de endereços IP sob responsabilidade do servidor DHCP já presente na rede.
+
+O equipamento também recebeu um endereço IP estático dentro da sub-rede local, fora do intervalo destinado à distribuição dinâmica de endereços DHCP. Essa configuração facilita a identificação do equipamento e mantém seu endereço de administração previsível, permitindo acessar o painel de gerenciamento sem precisar descobrir seu IP a cada alteração de concessão DHCP.
+
+#### Evidências da configuração
+
+**Modo de operação:**
+
+![Configuração do modo Access Point](imagens/configuracao-ap.png)
+
+**Servidor DHCP:**
+
+![Configuração do servidor DHCP](imagens/configuracao-dhcp.png)
+
+**Configuração LAN:**
+
+![Configuração da rede LAN](imagens/configuracao-lan.png)
+
+### Conexão física
+
+A integração foi realizada por meio de um cabo Ethernet entre a porta LAN 1 do Intelbras AF 1200 e a porta WAN do TP-Link EX3000.
+
+Essa conexão permitiu que o EX3000 operasse como ponto de acesso, disponibilizando conectividade Wi-Fi para os dispositivos na área atendida.
