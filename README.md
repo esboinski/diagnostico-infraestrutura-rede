@@ -43,7 +43,7 @@ A partir do Intelbras AF 1200, foi integrado um TP-Link EX3000 por meio de uma c
 | Intelbras AF 1200 | Equipamento responsável pela conectividade da área das câmeras |
 | TP-Link EX3000 | Ponto de acesso adicional |
 | Câmeras | Dispositivos conectados à infraestrutura existente |
-| Notebook ![Windows 11](https://img.shields.io/badge/Windows-11-blue?logo=windows11&logoColor=white) | Dispositivo utilizado para configuração e testes |
+| Notebook | Dispositivo utilizado para configuração e testes |
 
 O diagrama representa as conexões físicas e sem fio identificadas durante a atividade. Os detalhes de configuração e funcionamento lógico da rede são abordados nas próximas seções.
 
