@@ -32,7 +32,7 @@ A partir do Intelbras AF 1200, foi integrado um TP-Link EX3000 por meio de uma c
 
 ### Diagrama da infraestrutura
 
-![Topologia da infraestrutura de rede](diagramas/topologia.png)
+![Topologia da infraestrutura de rede](imagens/topologia.png)
 
 ### Equipamentos envolvidos
 
